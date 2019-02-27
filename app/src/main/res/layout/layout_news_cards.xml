@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:clickable="true"
+      android:animateLayoutChanges="true"
+      android:focusable="true"
+      android:id="@+id/body"
+      android:foreground="?attr/selectableItemBackground"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/newsImage"
+            android:layout_width="match_parent"
+            android:layout_height="250dip" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="?attr/textColor"
+                android:padding="20dip"
+                android:id="@+id/title"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginBottom="30dip"
+                android:layout_marginTop="-12dip"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="?attr/textColor"
+                    android:id="@+id/source"
+                    android:alpha="0.8"
+                    android:text="@string/app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:textColor="?attr/textColor"
+                    android:layout_marginStart="5dip"
+                    android:layout_marginEnd="5dip"
+                    android:alpha="0.8"
+                    android:text="|"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:textColor="?attr/textColor"
+                    android:id="@+id/publishedTime"
+                    android:alpha="0.8"
+                    android:text="@string/app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+  </LinearLayout>
